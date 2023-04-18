@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
 
-const VideoButton = ({ link, buttonOneText }) => {
+const VideoButton = ({ videoId, buttonOneText }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -17,7 +17,7 @@ const VideoButton = ({ link, buttonOneText }) => {
       <ModalVideo
         channel="youtube"
         isOpen={isOpen}
-        videoId={link}
+        videoId={videoId}
         onClose={() => setIsOpen(false)}
       />
     </div>
