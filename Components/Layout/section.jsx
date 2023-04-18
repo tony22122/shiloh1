@@ -52,6 +52,7 @@ const Section = ({
         muted
         loop
         autoPlay={isPlaying}
+        poster="/loading1.gif" // loading animation
       />
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         <div className="relative flex justify-center items-end w-full mb-20">
