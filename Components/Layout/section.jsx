@@ -1,7 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import VideoButton from "/home/clyde/Code/shiloh/Components/Buttons/video-button.jsx";
+import Link from "next/link";
 
-const Section = ({ videoUrl, text, videoId, buttonOneText, buttonTwoText }) => {
+const Section = ({
+  videoUrl,
+  text,
+  videoId,
+  buttonOneText,
+  buttonTwoText,
+  buttonLink = "/", // add a default value,
+}) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -11,7 +19,7 @@ const Section = ({ videoUrl, text, videoId, buttonOneText, buttonTwoText }) => {
       rootMargin: "0px",
       threshold: 0.5,
     };
-  
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -23,11 +31,11 @@ const Section = ({ videoUrl, text, videoId, buttonOneText, buttonTwoText }) => {
         }
       });
     }, options);
-  
+
     if (videoRef.current) {
       observer.observe(videoRef.current);
     }
-  
+
     return () => {
       if (videoRef.current) {
         observer.unobserve(videoRef.current);
@@ -50,10 +58,10 @@ const Section = ({ videoUrl, text, videoId, buttonOneText, buttonTwoText }) => {
           <h1 className="text-6xl font-normal text-white">{text}</h1>
         </div>
         <div className="flex justify-start space-x-4">
-          <VideoButton videoId={videoId} buttonOneText={buttonOneText}/>
-          <button className="px-4 mt-8 mx-5 py-2 text-white underline border-white rounded hover:border-white transition duration-300 ease-in-out focus:outline-none">
-            {buttonTwoText}
-          </button>
+          <VideoButton videoId={videoId} buttonOneText={buttonOneText} />
+          <Link href={buttonLink} className="px-4 mt-8 mx-5 py-2 text-white underline border-white rounded hover:border-white transition duration-300 ease-in-out focus:outline-none">
+              {buttonTwoText}
+          </Link>
         </div>
       </div>
     </div>

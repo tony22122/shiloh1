@@ -2,7 +2,6 @@
 import React from "react";
 import Navbar from "../Components/Layout/navbar.jsx";
 import Section from "../Components/Layout/section.jsx"
-import { motion } from "framer-motion";
 
 
 export default function Home() {
@@ -15,6 +14,7 @@ export default function Home() {
         text="redemptive tech in Jesus' name"
         buttonTwoText="learn more"
         buttonOneText="watch" videoId="uu01xBw_BVE"
+        buttonLink="/about"
       />
       <Section
         key="section1"
@@ -22,6 +22,7 @@ export default function Home() {
         text="about"
         buttonOneText="watch" 
         buttonTwoText="learn more"
+        buttonLink="/about"
       />
       <Section
         key="section2"
@@ -29,6 +30,7 @@ export default function Home() {
         text="get involved"
         buttonOneText="watch" 
         buttonTwoText="learn more"
+        buttonLink="/getinvolved"
       />
       <Section
         key="section3"
@@ -36,6 +38,7 @@ export default function Home() {
         text="projects"
         buttonOneText="watch" 
         buttonTwoText="learn more"
+        buttonLink="/projects"
       />
       <Section
         key="section4"
@@ -43,6 +46,7 @@ export default function Home() {
         text="hire us"
         buttonOneText="watch" 
         buttonTwoText="learn more"
+        buttonLink="/contactus"
       />
       <Section
         key="section5"
@@ -50,6 +54,7 @@ export default function Home() {
         text="contact us"
         buttonOneText="watch" 
         buttonTwoText="learn more"
+        buttonLink="/contactus"
       />
       </>
   );
