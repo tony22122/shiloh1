@@ -8,10 +8,10 @@ export default function Home() {
     <>
       <Navbar />
       <Section
-        videoUrl="https://rr3---sn-nx5s7nel.googlevideo.com/videoplayback?expire=1681812183&ei=dxY-ZIiXLKCM_9EPusy-sA8&ip=15.204.174.204&id=o-AE49oMVwQRTSFMBjl7XvZoZt2-4d8o_Rgs9TXq-Sm5ux&itag=22&source=youtube&requiressl=yes&spc=99c5CdZXd08O95IMloGPGq5mcstIep4&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=192.493&lmt=1679719792702831&fexp=24007246&c=ANDROID&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgRKyJdJhOvhiuHCLkPM1jqozgkaliM9oin1SkU-c4ZMMCIExEOHxWBR-Fw_2xqCKEYobSq_K0mXqVGp-Drb5H4MZY&host=rr1---sn-p5qs7nzk.googlevideo.com&redirect_counter=1&rm=sn-p5qe7y7e&req_id=7b420ee96ae3a3ee&cms_redirect=yes&ipbypass=yes&mh=ZX&mip=2605:59c8:458:fc10:5cac:f6bb:3f0:d4a8&mm=31&mn=sn-nx5s7nel&ms=au&mt=1681790222&mv=m&mvi=3&pl=40&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAPK8gNbgu42rwz3uqR1lMBAKYCmcuIYMejjVsXNxz9GXAiEA-HKjPzRU_JSX26Nmt-q01WZQ1fKBFRe5K6uW1JWRoRA%3D"
+        videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
         text="redemptive tech in Jesus' name"
-        buttonOneText="watch" 
         buttonTwoText="learn more"
+        buttonOneText="Watch" videoId="khbXchTeE"
       />
       <Section
         videoUrl="https://rr2---sn-vgqsknly.googlevideo.com/videoplayback?expire=1681820311&ei=NzY-ZLiXNcrO8wTXlp3YBQ&ip=15.204.174.205&id=o-AIURdLrU3YcNtnUpLoL3D_iec3v8rTkvoNcWMG4R4EAk&itag=22&source=youtube&requiressl=yes&spc=99c5CW9_6piE8zD4uWtb1XmeXIFTIjA&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=170.991&lmt=1628618583216432&fexp=24007246&c=ANDROID&txp=5311224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhALw9zi65tVkUhhQShkW3Yy7zxaDrnkXDYAIvchAcD-2nAiEA0Uylg0GI_-2QwVqbsyoL1N3IYoqCzWc7Kx5pkXVLPbc%3D&host=rr2---sn-p5qddn7r.googlevideo.com&rm=sn-p5qel77l&req_id=c70118d7d937a3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-nx5sk7l&cms_redirect=yes&cmsv=e&mh=It&mip=2605:59c8:458:fc10:5cac:f6bb:3f0:d4a8&mm=34&mn=sn-vgqsknly&ms=ltu&mt=1681798608&mv=m&mvi=2&pl=40&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhALEvvp_J4MX7zxd00taP964ALILSjBRUNCCuhdAxr55lAiAbYpxCaiZKcLW8U67R-O4JazIWK1T2649mtxEindLogA%3D%3D"
