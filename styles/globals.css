@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -26,13 +26,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 /*additional css*/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
 }
 a{
   text-decoration: none;
@@ -48,7 +46,13 @@ nav{
   padding: 16px;
   justify-content: space-between;
   align-items: center;
-  background-color: #f1f1f1;
+  background-color: #f1f1f100;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 .nav__menu-bar{
   display: flex;
@@ -59,7 +63,8 @@ nav{
 .nav__menu-bar div{
   width: 40px;
   height: 4px;
-  background-color: black;
+  background-color: white;
+  color:white;
   border-radius: 2px;
 }
 .nav__menu-list{
@@ -73,7 +78,7 @@ nav{
   padding: 24px 16px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
-  background-color: #f1f1f1;
+  background-color: none;
 }
 .nav__menu-list.active{
   right: 0;
@@ -113,7 +118,7 @@ nav{
     height: 6px;
     bottom: -16px;
     left: 0;
-    background-color: black;
+    background-color: white;
     transition: all 0.2s;
   }
   
