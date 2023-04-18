@@ -12,6 +12,7 @@
     "@next/font": "^13.3.0",
     "animejs": "^3.2.1",
     "autoprefixer": "10.4.14",
+    "framer-motion": "^10.12.4",
     "next": "13.3.0",
     "observer": "^0.0.2",
     "postcss": "8.4.22",

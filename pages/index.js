@@ -2,6 +2,8 @@
 import React from "react";
 import Navbar from "../Components/Layout/navbar.jsx";
 import Section from "../Components/Layout/section.jsx"
+import { motion } from "framer-motion";
+
 
 export default function Home() {
   return (
