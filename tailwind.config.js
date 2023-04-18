@@ -53,6 +53,7 @@ module.exports = {
     "px-20",
     "px-5",
     "text-base",
+    "px-2",
   ],
   theme: {
     extend: {

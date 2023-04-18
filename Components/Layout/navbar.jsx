@@ -18,8 +18,8 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-        <div className="flex items-center"><Image src="/shilohlogowhite.png" alt="Description of the image" width={50} height={50} />
-          <h1 className="logo px-5">shiloh</h1></div>
+        <div className="flex items-center hover:fade"><Image src="/shilohlogowhite.png" alt="Description of the image" width={30} height={30} />
+          <h1 className="logo px-2">shiloh</h1></div>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
