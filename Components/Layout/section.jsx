@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import VideoButton from "/home/clyde/Code/shiloh/Components/Buttons/video-button.jsx";
+
 const Section = ({ videoUrl, text, videoId, buttonOneText, buttonTwoText }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -10,23 +11,27 @@ const Section = ({ videoUrl, text, videoId, buttonOneText, buttonTwoText }) => {
       rootMargin: "0px",
       threshold: 0.5,
     };
-
+  
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setIsPlaying(true);
-          videoRef.current.play();
+          videoRef.current?.play();
         } else {
           setIsPlaying(false);
-          videoRef.current.pause();
+          videoRef.current?.pause();
         }
       });
     }, options);
-
-    observer.observe(videoRef.current);
-
+  
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+  
     return () => {
-      observer.unobserve(videoRef.current);
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
     };
   }, []);
 
