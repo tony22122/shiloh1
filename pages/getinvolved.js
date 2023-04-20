@@ -1,7 +1,13 @@
 import React from "react";
 import Navbar from "../Components/Layout/navbar.jsx";
-import Section from "../Components/Layout/section.jsx"
-import ContactFormSection from "@/Components/Layout/ContactFormSection.jsx";
+
+import dynamic from "next/dynamic";
+
+const Section = dynamic(() => import("../Components/Layout/section.jsx"));
+const ContactFormSection = dynamic(() =>
+  import("../Components/Layout/ContactFormSection.jsx")
+);
+
 
 export default function Home() {
   return (
