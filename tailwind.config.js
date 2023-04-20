@@ -57,6 +57,8 @@ module.exports = {
     "text-5xl",
     "mx-4",
     "px-2",
+    "overflow-auto",
+    "overflow-hidden"
     
   ],
   theme: {

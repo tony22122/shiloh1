@@ -1,20 +1,22 @@
 import React from "react";
 import Navbar from "../Components/Layout/navbar.jsx";
 import Section from "../Components/Layout/section.jsx";
-import SubSection from "../Components/Layout/sub-section.jsx";
 import ContactFormSection from "@/Components/Layout/ContactFormSection.jsx";
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Section
-        key="aboutSection0"
-        videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
-        text="about"
-        buttonTwoText="reach out"
-        buttonOneText="watch"
-        videoId="uu01xBw_BVE"
-      />
+
+<Section
+  key="aboutSection0"
+  videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
+  text="about"
+  buttonTwoText="reach out"
+  buttonLink="#contact"
+  buttonOneText="watch"
+  videoId="uu01xBw_BVE"
+>
+</Section>
       <Section
         key="aboutSection1"
         videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
@@ -33,7 +35,7 @@ export default function Home() {
       <ContactFormSection
       text="say hello"
 
-      buttonOneText="contact us"
+      buttonText="contact us"
       />
     </>
   );

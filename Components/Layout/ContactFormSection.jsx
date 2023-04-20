@@ -7,7 +7,7 @@ const ContactFormSection = ({
 }) => {
   return (
     <>
-    <div className="relative z-10 h-screen w-screen">
+    <div id="contact" className="relative z-10 h-screen w-screen">
       <div className="absolute inset-0 z-0">
         <ContactThreeJsComponent />
         

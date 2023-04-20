@@ -60,8 +60,12 @@ const Section = ({
         </div>
         <div className="flex justify-start space-x-4">
           <VideoButton videoId={videoId} buttonOneText={buttonOneText} />
-          <Link href={buttonLink} className="px-4 mt-8 mx-5 py-2 text-white underline border-white rounded hover:border-white transition duration-300 ease-in-out focus:outline-none">
-              {buttonTwoText}
+          <Link
+            href={buttonLink}
+            passHref
+            className="px-4 mt-8 mx-5 py-2 text-white underline border-white rounded hover:border-white transition duration-300 ease-in-out focus:outline-none"
+          >
+            {buttonTwoText}
           </Link>
         </div>
       </div>
