@@ -25,23 +25,23 @@ const ContactThreeJsComponent = React.memo(() => {
         mountRef.current.appendChild(renderer.domElement);
 
         camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 1000);
-        camera.position.z = 400;
+        camera.position.z = 700;
 
         const scene = new THREE.Scene();
-        scene.fog = new THREE.Fog(0x000000, 1, 1000);
+        scene.fog = new THREE.Fog(0x272822, 1, 1000);
 
         object = new THREE.Object3D();
         scene.add(object);
 
-        const geometry = new THREE.SphereGeometry(1, 4, 4);
-        const material = new THREE.MeshPhongMaterial({ color: 0xffffff, flatShading: true });
+        const geometry = new THREE.BoxGeometry(50, 50, 50);
+        const material = new THREE.MeshPhongMaterial({ color: 0xFFD700, flatShading: true });
 
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 30; i++) {
           const mesh = new THREE.Mesh(geometry, material);
           mesh.position.set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5).normalize();
           mesh.position.multiplyScalar(Math.random() * 400);
           mesh.rotation.set(Math.random() * 2, Math.random() * 2, Math.random() * 2);
-          mesh.scale.x = mesh.scale.y = mesh.scale.z = Math.random() * 50;
+          mesh.scale.x = mesh.scale.y = mesh.scale.z = Math.random() * 2;
           object.add(mesh);
         }
 
@@ -75,8 +75,8 @@ const ContactThreeJsComponent = React.memo(() => {
 
       function animate() {
         requestAnimationFrame(animate);
-        object.rotation.x += 0.005;
-        object.rotation.y += 0.01;
+        object.rotation.x += 0.002;
+        object.rotation.y += 0.003;
         composer.render();
       }
 

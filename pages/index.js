@@ -2,6 +2,8 @@
 import React from "react";
 import Navbar from "../Components/Layout/navbar.jsx";
 import Section from "../Components/Layout/section.jsx"
+import ContactFormSection from "@/Components/Layout/ContactFormSection.jsx";
+
 
 export default function Home() {
   return (
@@ -47,13 +49,8 @@ export default function Home() {
         buttonTwoText="learn more"
         buttonLink="/contactus"
       />
-      <Section
-        key="section5"
-        videoUrl="https://vid.puffyan.us/latest_version?id=mAg8UyDt_sw&itag=22"
-        text="contact us"
-        buttonOneText="watch" 
-        buttonTwoText="learn more"
-        buttonLink="/contactus"
+      <ContactFormSection
+      buttonOneText="contact us"
       />
       </>
   );

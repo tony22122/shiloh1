@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import { Fira_Code } from '@next/font/google'
 import { AnimatePresence, motion } from "framer-motion";
 import "../styles/globals.css";
+import VideoAsk from '../Components/Elements/VideoAsk';
 
 const firaCode = Fira_Code ({
   subsets: ["latin"],
@@ -9,6 +10,7 @@ const firaCode = Fira_Code ({
 
 function MyApp({ Component, pageProps, router }) {
   return (
+    <>
     <AnimatePresence mode='wait'>
       <motion.div
         key={router.route}
@@ -22,6 +24,8 @@ function MyApp({ Component, pageProps, router }) {
         </main>
       </motion.div>
     </AnimatePresence>
+    <VideoAsk />
+    </>
   );
 }
 
