@@ -11,7 +11,7 @@ export default function Home() {
   key="aboutSection0"
   videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
   text="about"
-  buttonTwoText="reach out"
+  buttonTwoText="say hello"
   buttonLink="#contact"
   buttonOneText="watch"
   videoId="uu01xBw_BVE"
@@ -22,6 +22,7 @@ export default function Home() {
         videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
         text="core team"
         buttonOneText="watch"
+        buttonLink=""
         videoId="uu01xBw_BVE"
       />
       <Section
@@ -29,6 +30,7 @@ export default function Home() {
         videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
         text="what we do"
         buttonOneText="watch"
+        buttonLink=""
         videoId="uu01xBw_BVE"
       />
 
