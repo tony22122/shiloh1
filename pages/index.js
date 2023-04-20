@@ -50,7 +50,9 @@ export default function Home() {
         buttonLink="/contactus"
       />
       <ContactFormSection
-      buttonOneText="contact us"
+      text="contact us"
+      buttonText="contact us"
+      buttonLink="https://www.videoask.com/f8fah1r34"
       />
       </>
   );
