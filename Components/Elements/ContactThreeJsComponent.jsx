@@ -6,7 +6,7 @@ import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader.js';
 import { DotScreenShader } from 'three/examples/jsm/shaders/DotScreenShader.js';
 
-const ContactThreeJsComponent = React.memo(() => {
+const ContactThreeJsComponent =  React.memo(() => {
   const [isMounted, setIsMounted] = useState(false);
   const mountRef = useRef(null);
 
