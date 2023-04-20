@@ -52,7 +52,7 @@ const Section = ({
         muted
         loop
         autoPlay={isPlaying}
-        poster="/loading1.gif" // loading animation
+        preload="metadata"
       />
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         <div className="relative flex justify-center items-end w-full mb-20">
@@ -61,13 +61,14 @@ const Section = ({
         <div className="flex justify-start space-x-4">
           <VideoButton videoId={videoId} buttonOneText={buttonOneText} />
           {buttonLink && (
-  <Link
-    href={buttonLink}
-    id="ButtonLink" className="px-4 mt-8 mx-5 py-2 text-white "
-  >
-    {buttonTwoText}
-  </Link>
-)}
+            <Link
+              href={buttonLink}
+              id="ButtonLink"
+              className="px-4 mt-8 mx-5 py-2 text-white "
+            >
+              {buttonTwoText}
+            </Link>
+          )}
         </div>
       </div>
     </div>
