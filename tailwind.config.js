@@ -54,6 +54,10 @@ module.exports = {
     "px-5",
     "text-base",
     "px-2",
+    "text-5xl",
+    "mx-4",
+    "px-2",
+    
   ],
   theme: {
     extend: {
