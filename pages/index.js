@@ -13,10 +13,10 @@ export default function Home() {
       <Navbar />
       <Section
         key="section0"
-        videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
+        videoUrl="/optimized-shiloh-main-banner.mp4"
         text="redemptive tech in Jesus' name"
         buttonTwoText="learn more"
-        buttonOneText="watch" videoId="uu01xBw_BVE"
+        buttonOneText="watch" videoId="R0QFTSLC1Gg"
         buttonLink="/about"
       />
       <Section
