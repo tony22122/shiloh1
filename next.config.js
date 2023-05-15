@@ -8,8 +8,10 @@ const nextConfig = {
   },
 
   // This is the list of pages that should be exported when you run the `next export` command.
-  exportPathMap: {
-    '/pages/*': './pages/*',
+  exportPathMap: async function () {
+    return {
+      '/pages/*': { page: './pages/*' },
+    };
   },
 };
 
