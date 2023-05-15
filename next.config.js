@@ -1,6 +1,6 @@
 const nextConfig = {
   // This is the base path for your application.
-  basePath: '/',
+  basePath: '',
 
   // This is the environment that your application is running in.
   env: {
