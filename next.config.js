@@ -1,4 +1,7 @@
+//need to convert to modern import method: https://nextjs.org/docs/pages/building-your-application/deploying/static-exports
+
 const nextConfig = {
+  
   // This is the base path for your application.
   basePath: "",
 
@@ -9,7 +12,13 @@ const nextConfig = {
   exportPathMap: async function () {
     return {
       "/pages/*": { page: "./pages/*" },
+      
     };
+    
+  },
+  //This disables image optimization.
+  images: {
+    unoptimized: true,
   },
 };
 
