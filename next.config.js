@@ -11,7 +11,12 @@ const nextConfig = {
   // This is the list of pages that should be exported when you run the `next export` command.
   exportPathMap: async function () {
     return {
-      "/pages/*": { page: "./pages/*" },
+      '/': { page: '/' },
+  '/about': { page: '/about' },
+  '/contactus': { page: '/contactus' },
+  '/getinvolved': { page: '/getinvolved' },
+  '/hireus': { page: '/hireus' },
+  '/projects': { page: '/projects' },
       
     };
     
