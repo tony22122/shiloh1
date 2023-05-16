@@ -1,5 +1,5 @@
-import ContactButton from "../Buttons/ContactButton.jsx";
-import ContactThreeJsComponent from "../Elements/ContactThreeJsComponent.jsx";
+import ContactButton from "../buttons/ContactButton.jsx";
+import ContactThreeJsComponent from "../elements/ContactThreeJsComponent.jsx";
 
 const ContactFormSection = ({
   text,

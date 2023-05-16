@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../components/Layout/navbar.jsx";
+import Navbar from "../components/layouts/navbar.jsx";
 import dynamic from "next/dynamic";
 
 const ContactFormSection = dynamic(() =>
-  import("../components/Layout/ContactFormSection.jsx")
+  import("../components/layouts/ContactFormSection.jsx")
 );
 
 

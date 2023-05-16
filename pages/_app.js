@@ -1,6 +1,6 @@
 import { Fira_Code } from 'next/font/google'
 import { AnimatePresence, motion } from "framer-motion";
-import VideoAsk from "../components/Elements/VideoAsk.jsx";
+import VideoAsk from "../components/elements/VideoAsk.jsx";
 import "../styles/globals.css";
 
 const firaCode = Fira_Code ({

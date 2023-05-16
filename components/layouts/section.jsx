@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import VideoButton from "../Buttons/video-button.jsx";
+import VideoButton from "../buttons/video-button.jsx";
 import Link from "next/link";
 
 const Section = ({
