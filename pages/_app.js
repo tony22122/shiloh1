@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import { Fira_Code } from '@next/font/google'
+import { Fira_Code } from 'next/font/google'
 import { AnimatePresence, motion } from "framer-motion";
 import "../styles/globals.css";
 import VideoAsk from '../Components/Elements/VideoAsk';
