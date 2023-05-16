@@ -6,10 +6,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export"  
-},
+    "export": "next export"
+  },
   "dependencies": {
-    "@next/font": "^13.3.0",
     "animejs": "^3.2.1",
     "autoprefixer": "10.4.14",
     "core-js": "^3.30.2",
