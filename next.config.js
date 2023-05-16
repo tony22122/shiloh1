@@ -9,14 +9,14 @@ const nextConfig = {
   env: {},
 
   // This is the list of pages that should be exported when you run the `next export` command.
-  exportPathMap: async function () {
+  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
     return {
-      '/': { page: '/' },
-  '/about': { page: '/about' },
-  '/contactus': { page: '/contactus' },
-  '/getinvolved': { page: '/getinvolved' },
-  '/hireus': { page: '/hireus' },
-  '/projects': { page: '/projects' },
+      '/': { page: '/' , query: { __nextDefaultLocale: 'en' }},
+  '/about': { page: '/about' , query: { __nextDefaultLocale: 'en' }},
+  '/contactus': { page: '/contactus' , query: { __nextDefaultLocale: 'en' }},
+  '/getinvolved': { page: '/getinvolved' , query: { __nextDefaultLocale: 'en' }},
+  '/hireus': { page: '/hireus' , query: { __nextDefaultLocale: 'en' }},
+  '/projects': { page: '/projects' , query: { __nextDefaultLocale: 'en' }},
       
     };
     
