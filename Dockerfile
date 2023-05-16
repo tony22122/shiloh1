@@ -4,6 +4,8 @@ COPY package.json ./
 RUN npm install
 
 COPY next.config.js ./next.config.js
+COPY tailwind.config.js ./tailwind.config.js
+COPY postcss.config.js ./postcss.config.js
 COPY components ./components
 COPY pages ./pages
 COPY public ./public
