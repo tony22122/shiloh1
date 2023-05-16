@@ -1,8 +1,7 @@
-import '@/styles/globals.css'
 import { Fira_Code } from 'next/font/google'
 import { AnimatePresence, motion } from "framer-motion";
+import VideoAsk from "../components/Elements/VideoAsk.jsx";
 import "../styles/globals.css";
-import VideoAsk from '../Components/Elements/VideoAsk';
 
 const firaCode = Fira_Code ({
   subsets: ["latin"],
