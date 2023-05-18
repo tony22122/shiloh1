@@ -5,7 +5,7 @@ services:
     image: docker-nextjs-dev
     build: .
     ports:
-      - 8443:8212
+      - 8443:8443
     volumes:
       - ./pages:/app/pages
       - ./public:/app/public
