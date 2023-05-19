@@ -3,17 +3,17 @@ FROM node:16-alpine AS build-stage
 
 WORKDIR /app
 
-COPY package.json ./
-COPY package-lock.json ./
+COPY /home/ubuntu/git/shiloh1/package.json ./
+COPY /home/ubuntu/git/shiloh1/package-lock.json ./
 RUN npm ci --production
 
-COPY next.config.js ./
-COPY tailwind.config.js ./
-COPY postcss.config.js ./
-COPY components ./components
-COPY pages ./pages
-COPY public ./public
-COPY styles ./styles
+COPY /home/ubuntu/git/shiloh1/next.config.js ./
+COPY /home/ubuntu/git/shiloh1/tailwind.config.js ./
+COPY /home/ubuntu/git/shiloh1/postcss.config.js ./
+COPY /home/ubuntu/git/shiloh1/components ./components
+COPY /home/ubuntu/git/shiloh1/pages ./pages
+COPY /home/ubuntu/git/shiloh1/public ./public
+COPY /home/ubuntu/git/shiloh1/styles ./styles
 
 RUN npm run build
 
