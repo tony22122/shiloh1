@@ -32,4 +32,6 @@ COPY --from=build-stage /app/public ./public
 COPY --from=build-stage /app/styles ./styles
 COPY --from=build-stage /app/node_modules ./node_modules
 
+EXPOSE 3000
+
 CMD ["npm", "start"]
