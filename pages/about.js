@@ -1,6 +1,6 @@
 import React from "react";
+import Head from "next/head";
 import Navbar from "../components/layouts/navbar.jsx";
-
 import dynamic from "next/dynamic";
 
 const Section = dynamic(() => import("../components/layouts/section.jsx"));
@@ -11,34 +11,23 @@ const ContactFormSection = dynamic(() =>
 export default function Home() {
   return (
     <>
+        <Head>
+        <title>about</title>
+        <meta name="description" content="about shiloh" />
+        <meta name="keywords" content="shiloh, about, redemptive tech, Jesus, faith, christian developers" />
+      </Head>
       <Navbar />
 
 <Section
   key="aboutSection0"
-  videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
+  videoUrl="/true_freedom_optimized.mp4"
   text="about"
   buttonTwoText="say hello"
   buttonLink="#contact"
   buttonOneText="watch"
-  videoId="uu01xBw_BVE"
+  videoId="W60vWdXR1sQ"
 >
 </Section>
-      <Section
-        key="aboutSection1"
-        videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
-        text="core team"
-        buttonOneText="watch"
-        buttonLink=""
-        videoId="uu01xBw_BVE"
-      />
-      <Section
-        key="aboutSection3"
-        videoUrl="https://vid.puffyan.us/latest_version?id=--khbXchTeE&itag=22"
-        text="what we do"
-        buttonOneText="watch"
-        buttonLink=""
-        videoId="uu01xBw_BVE"
-      />
 
       <ContactFormSection
       text="say hello"

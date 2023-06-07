@@ -6,8 +6,8 @@ import NavItem from "./nav-item";
 const MENU_LIST = [
   { text: "about", href: "/about" },
   { text: "get involved", href: "/getinvolved" },
-  { text: "projects", href: "/projects" },
-  { text: "hire us", href: "/hireus" },
+  //{ text: "projects", href: "/projects" },
+  //{ text: "hire us", href: "/hireus" },
   { text: "contact us", href: "/contactus" },
 ];
 const Navbar = () => {
